@@ -1,11 +1,37 @@
 @use '../variables' as *;
 
 .main-nav {
-  
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0; 
+}
+
+.main-nav ul {
+  display: flex;
+  align-
+}
+
+.main-nav li {
+  font-family: $serif; 
+  font-size: 12px; 
+  margin-right: 10px; 
+}
+
+.main-nav li:hover {
+  color: $lightest-gray; 
+}
+
+.main-nav .buttons {
+  display: flex;
+  align-items: center;
 }
 
 .left-nav > ul,
 .right-nav > ul {
+  
+}
+
+.main-nav .buttons button {
   
 }
 

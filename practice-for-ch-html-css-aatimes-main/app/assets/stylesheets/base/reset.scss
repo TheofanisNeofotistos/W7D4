@@ -23,9 +23,9 @@ ol, ul {
 }
 
 img {
-  // display:
-  // width:
-  // height:
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 input[type="password"],
@@ -43,13 +43,41 @@ button {
   appearance: none;
 }
 
-button,
-input[type="submit"] {
-  // cursor:
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-/* Clearfix */
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .group:after {
   // ...
 }
+
+
+/*
+
+
+*/
+
+
+
+
+
+
+
+
+
+
