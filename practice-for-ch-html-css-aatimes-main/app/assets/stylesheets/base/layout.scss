@@ -1,53 +1,63 @@
-/* Define application-wide selectors here!*/
-@use '../variables' as *;
+
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
 
 html {
 	position: relative;
 	height: 100%;
 }
 
-body {
-	width: 80%;
-	margin: 0 auto;
-	font-family: serif; /* Replace $serif with the desired font */
+ul {
+	
+	display: flex;
+	align-items: center;
+}
+
+.main-nav li{
+	
+	font-family: nyt-franklin, helvetica, arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.non-blue-buttons{
+	padding: 5px;
+}
+
+.non-blue-buttons:hover{
+	background-color: yellow;
+	
+}
+
+.fas, .fa-cog {
 	font-size: 12px;
 }
 
-button {
-	// background-color:
-	// border-color:
-	// color:
-	// font-weight:
-	// padding:
-	// border-radius:
-	// transition:
-	// font-family:
-	// text-transform:
-	// font-size:
-	// text-align:
+
+
+.right-nav .button{
+	background-color: #6A8AA1;
+	border-radius: 2px;
+	padding: 5px;
+	margin: 3px;
 }
 
-button:hover {
-	// background-color:
-	// border-color:
+
+
+.right-nav .button:hover {
+	background-color: #3e698b;
+
+	
 }
 
-/*
-	Header Rules
-*/
 
-hr {
-	border: 0;
-	height: 1px;
-	background-color: $light-gray;
-}
 
-.hr-top, .hr-bottom {
-	width: 100%;
-	margin: 0;
-}
 
-.hr-top {
-	height: 2px;
-	margin-bottom: 1px;
+header{
+	border-bottom: solid 1px lightgrey;
 }

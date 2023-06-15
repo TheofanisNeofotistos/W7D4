@@ -1,18 +1,32 @@
 <header class="main-nav">
 	<nav class="left-nav">
 		<ul>
-      <li data-controller="sections-sidebar"> 
-        <div id="sections-sidebar-btn" data-action="click->sections-sidebar#toggleSidebar">
-          <i class="fa-solid fa-bars"></i>
-          <span>sections</span>
-        </div>
-      </li>
-			<li data-controller="modal">
-        <div id="search-modal-btn" data-action="click->modal#toggleModal">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <span>search</span>
-        </div>
+			<li class="non-blue-buttons" id="sections-sidebar-btn">
+				<i class="fa fa-bars"></i>
+				<span class="non-blue-buttons">sections</span>
+			</li>
+			<li class="non-blue-buttons" id="search-modal-btn">
+				<i class="fa fa-search"></i>
+				<span >search</span>
 			</li>
 		</ul>
 	</nav>
+
+	<nav class = "right-nav">
+		<ul>
+			<li>
+				<span class="button">Sub to my only fans</span>
+			</li>
+
+			<li>
+				<span class="button">Login to onlyfans</span>
+			</li>
+
+			<li class="non-blue-buttons">
+				<span id="dropdown-gear"><i class="fas fa-cog"></i></span>
+				<%=render partial: 'shared/gear_dropdown' %> 
+			</li>
+		</ul>
+	</nav>
+	
 </header>
